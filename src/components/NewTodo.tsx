@@ -1,5 +1,7 @@
 import React, { useRef } from "react"
 
+import "./TodoList.css"
+
 type NewTodoProps = {
   onAddTodo: (todoText: string) => void
 }
@@ -15,7 +17,7 @@ const NewTodo: React.FC<NewTodoProps> = props => {
 
   return (
     <form onSubmit={todoSubmitHandler}>
-      <div>
+      <div className="form-control">
         <label htmlFor="todo-text" defaultValue="What's in here now?">
           Todo Text
         </label>
