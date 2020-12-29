@@ -21,7 +21,7 @@ const NewTodo: React.FC<NewTodoProps> = props => {
         </label>
         <input type="text" id="todo-text" ref={textInputRef} />
       </div>
-      <button type="submit"></button>
+      <button type="submit">Add Todo</button>
     </form>
   )
 }
