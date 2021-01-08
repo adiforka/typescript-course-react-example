@@ -1,11 +1,11 @@
-import React from "react"
-import Todo from "../model/todo.model"
+import React from "react";
+import Todo from "../model/todo.model";
 
-import "./NewTodo.css"
+import "./NewTodo.css";
 
 interface TodoListProps {
-  items: Todo[]
-  onDeleteTodo: (todoId: string) => void
+  items: Todo[];
+  onDeleteTodo: (todoId: string) => void;
 }
 
 const TodoList: React.FC<TodoListProps> = props => {
@@ -20,7 +20,7 @@ const TodoList: React.FC<TodoListProps> = props => {
         </li>
       ))}
     </ul>
-  )
-}
+  );
+};
 
-export default TodoList
+export default TodoList;

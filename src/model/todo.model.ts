@@ -1,6 +1,6 @@
 interface Todo {
-  id: string
-  text: string
+  id: string;
+  text: string;
 }
 
-export default Todo
+export default Todo;

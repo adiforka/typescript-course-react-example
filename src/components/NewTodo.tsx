@@ -1,19 +1,19 @@
-import React, { useRef } from "react"
+import React, { useRef } from "react";
 
-import "./TodoList.css"
+import "./TodoList.css";
 
 type NewTodoProps = {
-  onAddTodo: (todoText: string) => void
-}
+  onAddTodo: (todoText: string) => void;
+};
 
 const NewTodo: React.FC<NewTodoProps> = props => {
-  const textInputRef = useRef<HTMLInputElement>(null)
+  const textInputRef = useRef<HTMLInputElement>(null);
 
   const todoSubmitHandler = (event: React.FormEvent) => {
-    event.preventDefault()
-    const enteredText = textInputRef.current!.value
-    props.onAddTodo(enteredText)
-  }
+    event.preventDefault();
+    const enteredText = textInputRef.current!.value;
+    props.onAddTodo(enteredText);
+  };
 
   return (
     <form onSubmit={todoSubmitHandler}>
@@ -25,7 +25,7 @@ const NewTodo: React.FC<NewTodoProps> = props => {
       </div>
       <button type="submit">Add Todo</button>
     </form>
-  )
-}
+  );
+};
 
-export default NewTodo
+export default NewTodo;
